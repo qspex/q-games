@@ -12,7 +12,10 @@ const Games = () => {
         onMouseLeave={() => setHovered("")}
       >
         <Link to="/memory-game">
-          <img src="../imgs/memory-game-logo.jpg" alt="Memory Game" />
+          <img
+            src={`${process.env.PUBLIC_URL}/imgs/memory-game-logo.jpg`}
+            alt="Memory Game"
+          />
           <div className="game-info">
             <span>Memory Game</span>
           </div>
@@ -24,7 +27,10 @@ const Games = () => {
         onMouseLeave={() => setHovered("")}
       >
         <Link to="/2048">
-          <img src="../imgs/2048-logo.jpg" alt="2048" />
+          <img
+            src={`${process.env.PUBLIC_URL}/imgs/2048-logo.jpg`}
+            alt="2048"
+          />
           <div className="game-info">
             <span>2048</span>
           </div>
@@ -36,7 +42,10 @@ const Games = () => {
         onMouseLeave={() => setHovered("")}
       >
         <Link to="/flag-guesser">
-          <img src="../imgs/flag-guesser-logo.jpg" alt="Flag Guesser" />
+          <img
+            src={`${process.env.PUBLIC_URL}/imgs/flag-guesser-logo.jpg`}
+            alt="Flag Guesser"
+          />
           <div className="game-info">
             <span>Flag Guesser</span>
           </div>
@@ -48,7 +57,10 @@ const Games = () => {
         onMouseLeave={() => setHovered("")}
       >
         <Link to="/whack-a-mole">
-          <img src="../imgs/whack-a-mole-logo.jpg" alt="Whack A Mole" />
+          <img
+            src={`${process.env.PUBLIC_URL}/imgs/whack-a-mole-logo.jpg`}
+            alt="Whack A Mole"
+          />
           <div className="game-info">
             <span>Whack A Mole</span>
           </div>
@@ -60,7 +72,10 @@ const Games = () => {
         onMouseLeave={() => setHovered("")}
       >
         <Link to="/space-shooter">
-          <img src="../imgs/space-shooter-logo.jpg" alt="Space Shooter" />
+          <img
+            src={`${process.env.PUBLIC_URL}/imgs/space-shooter-logo.jpg`}
+            alt="Space Shooter"
+          />
           <div className="game-info">
             <span>Space Shooter</span>
           </div>
@@ -72,7 +87,10 @@ const Games = () => {
         onMouseLeave={() => setHovered("")}
       >
         <Link to="/snake">
-          <img src="../imgs/snake-logo.jpg" alt="Snake" />
+          <img
+            src={`${process.env.PUBLIC_URL}/imgs/snake-logo.jpg`}
+            alt="Snake"
+          />
           <div className="game-info">
             <span>Snake</span>
           </div>
