@@ -1,0 +1,38 @@
+.App {
+  background-color: purple;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff9800 #212121;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: purple;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff9800;
+  border-radius: 10px;
+  border: 3px solid #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb74d;
+}
+
+::-webkit-scrollbar-corner {
+  background: #222;
+}

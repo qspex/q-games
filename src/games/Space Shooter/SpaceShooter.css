@@ -1,0 +1,184 @@
+.space-shooter > h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.space-shooter-board {
+  background: #111;
+  box-shadow: 0 0 0 0.25rem white;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+
+  width: min(90vw, 31.25rem);
+  height: calc(min(90vw, 31.25rem) * 1.4);
+
+  max-height: 90vh;
+}
+
+.space-shooter-board::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: radial-gradient(circle, lightgray 2px, transparent 2px) 0 0 / 70px
+    70px repeat;
+}
+
+.space-shooter-open-settings {
+  position: absolute;
+  left: calc(50% + 180px);
+  transform: translateY(-100%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.settings {
+  position: absolute;
+  background-color: rgb(122, 122, 122);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  left: 50%;
+  transform: translate(-10%, 10%);
+  z-index: 1001;
+  border-radius: 10px;
+}
+
+.settings::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 82%;
+  width: fit-content;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgb(122, 122, 122);
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.volume-setting {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.game-over-ss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.game-over-ss > a {
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.game-over-ss > a:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.game-over-ss > button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+}
+
+.game-over-ss > button:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.space-shooter-controls {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .space-shooter-controls {
+    display: flex;
+    justify-content: space-between;
+    width: calc(90% + 2px);
+    margin-inline: auto;
+    font-size: 5rem;
+    line-height: 5rem;
+    user-select: none;
+    background-color: lightgray;
+    margin-top: 0.25rem;
+    border: 0.2rem solid gray;
+  }
+
+  .space-shooter-movements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52%;
+    border-right: 0.2rem solid gray;
+  }
+
+  .space-shooter-movements > span {
+    padding: 0rem 1rem;
+    width: 100%;
+    background-color: #ff9800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .space-shooter-open-settings {
+    display: none;
+  }
+
+  .space-shooter-mob-volume {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 20%;
+    background-color: #ff9800;
+  }
+
+  .settings {
+    left: 20%;
+    bottom: 0;
+    transform: translate(-10%, -25%);
+  }
+
+  .settings::before {
+    top: 99%;
+    left: 70%;
+    border-top: 10px solid rgb(122, 122, 122);
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+
+  .space-shooter-shoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    width: 30%;
+    background-color: #ff9800;
+  }
+  .space-shooter-shoot > span {
+    width: 100%;
+    text-align: center;
+  }
+}

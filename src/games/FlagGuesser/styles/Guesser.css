@@ -1,0 +1,59 @@
+.guesser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17rem;
+}
+
+.guesser > input {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.guesser-countries {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: white;
+  padding: 0 1rem;
+  max-height: 15rem;
+  overflow-x: hidden;
+}
+
+.guesser-countries > span {
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.guesser-countries > span.selected-guess {
+  background-color: gray;
+  border-radius: 7px;
+}
+
+.guesser-countries > span:hover {
+  background-color: gray;
+  border-radius: 7px;
+}
+
+@media (max-width: 35em) {
+  .guesser {
+    width: 15rem;
+    margin-top: 1rem;
+  }
+
+  .guesser > input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,31 @@
+.explosion {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: yellow;
+  transform: translate(-50%, -50%);
+  animation: explode 200ms ease-out forwards;
+  box-shadow:
+    0 0 10px yellow,
+    0 0 20px orange,
+    0 0 35px red;
+  z-index: 100;
+}
+
+@keyframes explode {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}

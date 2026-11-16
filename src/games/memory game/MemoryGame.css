@@ -1,0 +1,120 @@
+.memory-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-theme-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.theme-card-options {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.theme-card-options > h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.theme-card-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: white;
+  width: 10rem;
+}
+
+.theme-card-option > span {
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  width: calc(100% - 1rem);
+  text-transform: capitalize;
+}
+
+.theme-card-option > span:hover {
+  background: gray;
+  cursor: pointer;
+}
+
+.start-game-mc {
+  cursor: pointer;
+  background-color: white;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: #ff9800;
+  font-weight: 400;
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+}
+
+.start-game-mc:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 6rem 0 4rem 0;
+  max-width: 80rem;
+}
+
+.game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.game-over > a {
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.game-over > a:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.game-over > button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+}
+
+.game-over > button:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+@media (max-width: 35em) {
+  .board {
+    gap: 0.5rem;
+    padding: 4rem 0 2rem 0;
+  }
+
+  .game-over {
+    gap: 1rem;
+  }
+}

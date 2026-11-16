@@ -1,0 +1,9 @@
+.bullet {
+  position: absolute;
+  width: clamp(0.2rem, 2vw, 0.25rem);
+  height: clamp(0.7rem, 2vw, 1rem);
+  background: yellow;
+  border-radius: 5px;
+  z-index: 100;
+  transform: translate(0, 0);
+}

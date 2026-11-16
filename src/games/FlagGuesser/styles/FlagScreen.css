@@ -1,0 +1,46 @@
+.flag-screen {
+  width: 24rem;
+  height: 15rem;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(209, 209, 209);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.flag-screen > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.img-cover {
+  position: absolute;
+  inset: 0;
+  background: gray;
+  transition: transform 10s ease-in-out;
+}
+
+.neg-x {
+  transform: translateX(-100%);
+}
+.pos-x {
+  transform: translateX(100%);
+}
+.neg-y {
+  transform: translateY(-100%);
+}
+.pos-y {
+  transform: translateY(100%);
+}
+
+@media (max-width: 35em) {
+  .flag-screen {
+    width: 20rem;
+    height: 11rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+}

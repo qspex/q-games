@@ -1,0 +1,148 @@
+.board-2048 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  background: #bbada0;
+  padding: 0.7rem;
+  max-width: 70rem;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+  touch-action: none;
+  user-select: none;
+}
+
+.board-2048-game-over {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  background: #bbada0;
+  padding: 0.7rem;
+  max-width: 70rem;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  touch-action: none;
+  user-select: none;
+}
+
+.tile-2048 {
+  width: 4rem;
+  height: 4rem;
+  background: #cdc1b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.game-over-2048-txt > h3 {
+  text-align: center;
+  margin-top: 3rem;
+  color: white;
+  font-size: 4rem;
+}
+
+.game-over-2048 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.game-over-2048 > a {
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.game-over-2048 > a:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.game-over-2048 > button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+}
+
+.game-over-2048 > button:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.tile-color-0 {
+  background: #cdc1b4;
+}
+
+.tile-color-2 {
+  background: #eee4da;
+  color: black;
+}
+
+.tile-color-4 {
+  background: #ede0c8;
+  color: black;
+}
+
+.tile-color-8 {
+  background: #f2b179;
+  color: white;
+}
+
+.tile-color-16 {
+  background: #f59563;
+  color: white;
+}
+
+.tile-color-32 {
+  background: #f67c5f;
+  color: white;
+}
+
+.tile-color-64 {
+  background: #f65e3b;
+  color: white;
+}
+
+.tile-color-128 {
+  background: #edcf72;
+  color: white;
+}
+
+.tile-color-256 {
+  background: #edcc61;
+  color: white;
+}
+
+.tile-color-512 {
+  background: #edc850;
+  color: white;
+}
+
+.tile-color-1024 {
+  background: #edc53f;
+  color: white;
+}
+
+.tile-color-2048 {
+  background: #edc22e;
+  color: white;
+}
+
+.tile-2048 {
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}

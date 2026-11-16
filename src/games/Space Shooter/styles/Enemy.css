@@ -1,0 +1,5 @@
+.enemy {
+  position: absolute;
+  font-size: clamp(30px, 8vw, 40px);
+  z-index: 100;
+}

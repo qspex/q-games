@@ -1,0 +1,9 @@
+.ship {
+  position: absolute;
+  bottom: 1.25rem;
+  font-size: clamp(2.1rem, 10vw, 2.8rem);
+  transform: translateX(0);
+  will-change: transform;
+  rotate: (-45deg);
+  z-index: 100;
+}

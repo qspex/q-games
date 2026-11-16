@@ -1,0 +1,88 @@
+.flag-guesser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.flag-score {
+  font-size: 2rem;
+}
+
+.give-up-fg {
+  cursor: pointer;
+  background-color: red;
+  width: fit-content;
+  transform: translateX(200%);
+  font-size: 1.1rem;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.game-over-country-reveal {
+  text-align: center;
+  max-width: 60rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.game-over-flag-guesser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.game-over-flag-guesser > a {
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.game-over-flag-guesser > a:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.game-over-flag-guesser > button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+}
+
+.game-over-flag-guesser > button:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+@media (max-width: 35em) {
+  .flag-guesser {
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .give-up-fg {
+    transform: translateX(150%);
+  }
+
+  .game-over-country-reveal {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .game-over-flag-guesser {
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+}

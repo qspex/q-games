@@ -1,0 +1,12 @@
+.snake-board {
+  position: relative;
+  width: min(95vw, 500px);
+  aspect-ratio: 1/1;
+  background: #222;
+  border: 4px solid white;
+  margin-inline: auto;
+  touch-action: none;
+  overflow: hidden;
+
+  box-sizing: border-box;
+}

@@ -1,0 +1,79 @@
+.whack-a-mole {
+  width: fit-content;
+  max-width: 50rem;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.whack-a-mole > h3 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.wam-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0;
+}
+
+.start-game-wam {
+  cursor: pointer;
+  background-color: white;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: #ff9800;
+  font-weight: 400;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+
+.start-game-wam:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+.game-over-wam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.game-over-wam > a {
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.game-over-wam > a:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.game-over-wam > button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+}
+
+.game-over-wam > button:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+@media (max-width: 35em) {
+  .wam-board {
+    width: fit-content;
+    margin-inline: auto;
+    gap: 1rem;
+  }
+}

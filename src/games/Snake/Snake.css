@@ -1,0 +1,42 @@
+.snake-game {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.snake-cell {
+  border: 1px solid #333;
+}
+
+.game-over-snake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.game-over-snake > a {
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.6rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.game-over-snake > a:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+.game-over-snake > button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: orange;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  font-size: 1.7rem;
+}
