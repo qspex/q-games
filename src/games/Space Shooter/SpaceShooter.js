@@ -17,7 +17,7 @@ const SpaceShooter = () => {
   const [explosions, setExplosions] = useState([]);
 
   const [score, setScore] = useState(0);
-  const [lives, setLives] = useState(6);
+  const [lives, setLives] = useState(3);
   const [level, setLevel] = useState(1);
   const [gameOver, setGameOver] = useState(false);
 
@@ -216,7 +216,7 @@ const SpaceShooter = () => {
     setBullets([]);
     setEnemies([]);
     setScore(0);
-    setLives(6);
+    setLives(3);
     setGameOver(false);
     setShipX((boardWidth - SHIP_WIDTH) / 2);
     setOpenSettings(false);
@@ -385,9 +385,14 @@ const SpaceShooter = () => {
         </div>
       </div>
       <h3 style={{ margin: "0.5rem 0 3rem 0" }}>
-        {Array.from({ length: Math.ceil(lives / 2) }).map((_, i) => (
+        {Array.from({ length: Math.ceil(lives) }).map((_, i) => (
           <span key={i}>❤️</span>
         ))}
+
+        {/* local host */}
+        {/* {Array.from({ length: Math.ceil(lives / 2) }).map((_, i) => (
+          <span key={i}>❤️</span>
+        ))} */}
       </h3>
       {gameOver && (
         <div className="game-over-ss">

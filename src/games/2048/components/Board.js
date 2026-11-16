@@ -61,32 +61,30 @@ const Board = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      setBoard((currentBoard) => {
-        let newBoard = moveLeft(currentBoard);
+      switch (e.key) {
+        case "ArrowLeft":
+          e.preventDefault();
+          makeMove("left");
+          break;
 
-        switch (e.key) {
-          case "ArrowLeft":
-            makeMove("left");
-            break;
-          case "ArrowRight":
-            makeMove("right");
-            break;
-          case "ArrowUp":
-            makeMove("up");
-            break;
-          case "ArrowDown":
-            makeMove("down");
-            break;
-          default:
-            break;
-        }
+        case "ArrowRight":
+          e.preventDefault();
+          makeMove("right");
+          break;
 
-        if (boardsAreEqual(currentBoard, newBoard)) {
-          return currentBoard;
-        }
+        case "ArrowUp":
+          e.preventDefault();
+          makeMove("up");
+          break;
 
-        return spawnRandomTile(newBoard);
-      });
+        case "ArrowDown":
+          e.preventDefault();
+          makeMove("down");
+          break;
+
+        default:
+          break;
+      }
     };
 
     window.addEventListener("keydown", handleKeyDown);
@@ -127,7 +125,7 @@ const Board = () => {
 
   useEffect(() => {
     setGameOver(isGameOver(board));
-  }, board);
+  }, [board]);
 
   const restartGame = () => {
     setBoard(initializeGame());
