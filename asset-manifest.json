@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/q-games/static/css/main.b2ff63e5.css",
-    "main.js": "/q-games/static/js/main.d1cbd371.js",
+    "main.js": "/q-games/static/js/main.24b60ce8.js",
     "static/js/453.3289680e.chunk.js": "/q-games/static/js/453.3289680e.chunk.js",
     "static/media/explosion.mp3": "/q-games/static/media/explosion.2dca7e92d5d49485cad4.mp3",
     "static/media/gameOver.mp3": "/q-games/static/media/gameOver.21c74c34f50a8ecedde0.mp3",
     "static/media/shooting.mp3": "/q-games/static/media/shooting.058c3e2bbe4d20d7ec7f.mp3",
     "index.html": "/q-games/index.html",
     "main.b2ff63e5.css.map": "/q-games/static/css/main.b2ff63e5.css.map",
-    "main.d1cbd371.js.map": "/q-games/static/js/main.d1cbd371.js.map",
+    "main.24b60ce8.js.map": "/q-games/static/js/main.24b60ce8.js.map",
     "453.3289680e.chunk.js.map": "/q-games/static/js/453.3289680e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2ff63e5.css",
-    "static/js/main.d1cbd371.js"
+    "static/js/main.24b60ce8.js"
   ]
 }
